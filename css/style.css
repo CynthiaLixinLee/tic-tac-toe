@@ -1,0 +1,83 @@
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600);
+
+html {
+  font-family: 'Source Sans Pro';
+  background: #9cd6be;
+  font-size: 2em;
+  text-align: center;
+  color: #545957; 
+}
+
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.game-board {
+  width: 300px;
+  height: 300px;
+}
+
+.game-start {
+  position: relative;
+  
+}
+.game-play {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-auto-rows: 100px;
+  position: relative;
+  background: rgba(112,108,104,1);
+  background: -moz-radial-gradient(center, ellipse cover, rgba(112,108,104,1) 0%, rgba(41,38,38,1) 83%, rgba(41,38,38,1) 100%);
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(112,108,104,1)), color-stop(83%, rgba(41,38,38,1)), color-stop(100%, rgba(41,38,38,1)));
+  background: -webkit-radial-gradient(center, ellipse cover, rgba(112,108,104,1) 0%, rgba(41,38,38,1) 83%, rgba(41,38,38,1) 100%);
+  background: -o-radial-gradient(center, ellipse cover, rgba(112,108,104,1) 0%, rgba(41,38,38,1) 83%, rgba(41,38,38,1) 100%);
+  background: -ms-radial-gradient(center, ellipse cover, rgba(112,108,104,1) 0%, rgba(41,38,38,1) 83%, rgba(41,38,38,1) 100%);
+  background: radial-gradient(ellipse at center, rgba(112,108,104,1) 0%, rgba(41,38,38,1) 83%, rgba(41,38,38,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#706c68', endColorstr='#292626', GradientType=1 );
+}
+
+.game-end {
+  position: relative;
+}
+
+.win{
+  color: blueviolet;
+}
+
+.lose {
+  color: red;
+}
+
+.draw {
+  color: green;
+}
+
+.game-button {
+  text-align: center;
+  font-weight: bolder;
+  font-size: 40px;
+  color: white;
+  background-color: inherit;
+  border: 2px solid #fff;
+}
+
+.game-button:active,
+.game-button:focus {
+  outline: none;
+}
+
+#choose-x, #choose-o{
+  background-color: #3cbc89;
+  margin: 20px;
+  border: 3px solid white;
+  border-radius: 25px;
+  padding: 8px 30px;
+  color: white;
+  font-size: 1em;
+  font-weight: medium;
+  cursor:pointer;
+}
